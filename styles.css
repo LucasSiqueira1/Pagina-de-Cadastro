@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,600&family=Secular+One&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #1B2029;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15rem;
+}
+
+main h1 {
+    color: #8880FE;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-family: "Secular One", sans-serif;
+}
+
+main .social-media {
+    display: flex;
+    align-items: center;
+}
+
+main .social-media img {
+    width: 40px;
+    margin-left: 3rem;
+
+}
+
+main .social-media a:first-child img {
+    margin-left: 0;
+}
+
+.alt {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    position: relative;
+}
+
+.alt::before,
+.alt::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    background: white;
+    bottom: 50%;
+    right: 50px;
+}
+
+.alt::after {
+    left: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+form label span {
+    font-size: 1.3rem;
+}
+
+form input {
+    background-color: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline-color: #8880FE;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+form input:nth-child(4) {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 70%;
+    background-color: #6C63FF;
+    border-radius: 20px;
+    margin-top: 4rem;
+    transition: all 0.4s;
+}
+
+form input:nth-child(4):hover {
+    border: 5px solid #8880FE;
+
+}
+
+.images {
+    display: flex;
+    align-items: flex-end;
+    padding: 7rem;
+    margin-left: 4rem;
+}
+
+.circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #E8CBC0, #636FA4);
+    clip-path: circle(40% at right 60%);
+    z-index: -1;
+    /*funcina somente com position */
+}
+
+.circle2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(40deg, #e8cbc050, #e8cbc08e);
+    clip-path: circle(35% at right 10%);
+    z-index: -1;
+
+}
